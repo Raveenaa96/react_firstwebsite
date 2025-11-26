@@ -1,5 +1,5 @@
 import { useState,useEffect,Fragment } from "react";
-import { getallProdcuts } from "./action/productlist_action";
+import { getallProducts } from "./action/productlist_action";
 import { ProductShow } from "./components/ProductsShow";
 
 export function ProductListing(){
@@ -8,13 +8,13 @@ export function ProductListing(){
       
     
       useEffect(() => {
-        getallProdcuts(setProducts);
+        getallProducts(setProducts);
       }, []);
     
       return (
         <div>
           <div className="heading">
-            <h1 class="text-center text-secondary"> Our Products</h1>
+            <h1 className="text-center text-secondary"> Our Products</h1>
           </div>
     
           <div className="mx-5 product-Listing d-flex flex-wrap gap-5 mt-5" >

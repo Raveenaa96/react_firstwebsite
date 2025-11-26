@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getallProdcuts = async (setProducts) => {
+export const getallProducts = async (setProducts) => {
   let url = "https://fakestoreapi.com/products";
   let response = await axios.get(url);
   if (response?.data) {
@@ -9,6 +9,4 @@ export const getallProdcuts = async (setProducts) => {
     localStorage.setItem("Products",JSON.stringify(response?.data))
     
   }
-
-  console.log("Response=====>", response);
 };

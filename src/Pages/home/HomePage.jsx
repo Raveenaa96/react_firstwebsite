@@ -4,6 +4,7 @@ export function HomePage(){
 
 
     return <div>
+        <div>All Products</div>
          <div>
           <ProductListing />
          </div>

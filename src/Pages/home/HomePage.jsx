@@ -1,9 +1,11 @@
+import { ProductListing } from "../productListing/ProductListing";
+
 export function HomePage(){
 
 
     return <div>
-         <div className="heading text-center h1">
-              Home Page
+         <div>
+          <ProductListing />
          </div>
     </div>
 }
